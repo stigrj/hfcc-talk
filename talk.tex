@@ -1,6 +1,6 @@
 \pagenumbering{arabic}
 %\documentclass[slides]{beamer}
-\documentclass[mathserif, 10]{beamer}
+\documentclass[mathserif, 8]{beamer}
 \usepackage[framesassubsections]{beamerprosper}
 \setbeamercovered{transparent}
 %\documentclass[slides,hyperref={pdfpagelabels=false}]{beamer}
@@ -19,6 +19,9 @@
 \usepackage{multicol}
 \usepackage{booktabs} % Make some nice tables
 \usepackage{ae,aecompl}
+
+\usepackage[style=verbose,backend=biber]{biblatex}
+\addbibresource{talk.bib}
 
 %%%%%%%%%%%% COULEURS %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -60,5 +63,10 @@
 \usebackgroundtemplate{\includegraphics[width=1.02\paperwidth]{figures/ctcc_forside.jpg}}
 \maketitle
 }
+
+\include{introduction}
+\include{hfcc}
+\include{hsf}
+\include{nemo}
 
 \end{document}
