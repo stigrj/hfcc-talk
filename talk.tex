@@ -1,0 +1,64 @@
+\pagenumbering{arabic}
+%\documentclass[slides]{beamer}
+\documentclass[mathserif, 10]{beamer}
+\usepackage[framesassubsections]{beamerprosper}
+\setbeamercovered{transparent}
+%\documentclass[slides,hyperref={pdfpagelabels=false}]{beamer}
+%\documentclass[handout,gray]{beamer}
+\usepackage[makeroom]{cancel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{color}
+\usepackage{braket}
+\usepackage{verbatim}
+\usepackage{amsbsy}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{booktabs} % Make some nice tables
+\usepackage{ae,aecompl}
+
+%%%%%%%%%%%% COULEURS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mode<presentation>
+{
+  \definecolor{beamerstructure}{RGB}{43,79,112}
+  \definecolor{sidebackground}{RGB}{230,242,250}
+  \definecolor{CTCC}{RGB}{133,188,228}
+  \color{beamerstructure}
+  \usetheme{default}
+  \usepackage{courier}
+  \beamertemplateballitem
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{sidebar left}{\thispdfpagelabel{\insertframenumber}}
+%\setbeamertemplate{footline}{\quad\insertframenumber}
+%\usecolortheme{CTCC}
+}
+\usebackgroundtemplate{\includegraphics[width=1.02\paperwidth]{figures/ctcc_general.jpg}}
+
+\title{\\\vspace{1cm}
+\large Numerically Converged Hyperfine Coupling Constants}
+%\subtitle{\textcolor{magenta}{My subtitle (if applicable)}}
+\author{Stig Rune Jensen}
+\institute[CTCC]{\\[-6mm]stig.r.jensen@uit.no\\
+[6mm]UiT - The Arctic University of Norway\\[6mm]
+\includegraphics[height=1.5cm]{figures/uio.pdf}\hspace{1cm}
+\includegraphics[height=1.5cm]{figures/sff.pdf}\hspace{1cm}
+\includegraphics[height=1.5cm]{figures/uit.pdf}}
+\date{Hylleraas seminar\\November 10 2017}
+
+\include{newcommands}
+
+\begin{document}
+
+\footnotesize
+\setlength{\unitlength}{\textwidth}
+
+{
+\usebackgroundtemplate{\includegraphics[width=1.02\paperwidth]{figures/ctcc_forside.jpg}}
+\maketitle
+}
+
+\end{document}
