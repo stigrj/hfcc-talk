@@ -1,14 +1,32 @@
 \begin{frame}
-\frametitle{Introduction}
+\frametitle{Multiwavelets}
+\begin{columns}
+\begin{column}[b]{0.55\linewidth}
 \scriptsize
-Some multiwavelet
+\begin{itemize}
+\item Polynomial basis
+\item Adaptive resolution of grid cells
+\item Systematic convergence
+\item High numerical accuracy
+\end{itemize}
+
+\vspace{5mm}
+
+\includegraphics[scale=0.5, clip, viewport=150 450 450 750]{figures/scaling.pdf}
+\end{column}
+
+\begin{column}[b]{0.45\linewidth}
+\centering
+\includegraphics[scale=0.25]{figures/unifgrid.pdf}\\
+\includegraphics[scale=0.16]{figures/adapgrid.pdf}
+\end{column}
+\end{columns}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Introduction}
+\frametitle{Multiwavelets}
 \scriptsize
-
 \centering
 \textbf{Methyloxirane molecule}
 \hspace{30mm}
@@ -27,18 +45,20 @@ Some multiwavelet
     \begin{tabular}{ccccc}
     \hline               
     \hline               
-                   &                   &                &                 &                   \\
-    Precision      & Energy            & Dipole         & Magnetizability & NMR (O)           \\
-    \hspace{10mm}\ & \hspace{20mm}\    & \hspace{20mm}\ & \hspace{20mm}\  & \hspace{20mm}\    \\
-    $10^{-3}$      & -193.\red{133 656}&                &                 &                   \\
-    $10^{-4}$      & -192.9\red{70 804}&                &                 &                   \\
-    $10^{-5}$      & -192.963 \red{025}&                &                 &                   \\
-    $10^{-6}$      & -192.962 9\red{61}&                &                 &                   \\
-    $10^{-7}$      & -192.962 95\red{5}&                &                 &                   \\
-                   &                   &                &                 &                   \\
+                   &                        &                 &                          &                  \\
+\textbf{Precision} & \textbf{Energy}        & \textbf{Dipole} & \textbf{Magnetizability} & \textbf{NMR (O)} \\
+    \hspace{10mm}\ & \hspace{20mm}\         & \hspace{15mm}\  & \hspace{15mm}\           & \hspace{15mm}\   \\
+      MW4          & -192.9\red{70 600 312} & 0.72\red{0 854} & -9.23\red{7 441}         & 29\red{0.400}    \\
+      MW5          & -192.963 \red{040 674} & 0.724 \red{527} & -9.241 \red{277}         & 292.\red{090}    \\
+      MW6          & -192.962 95\red{8 847} & 0.725 0\red{47} & -9.241 2\red{08}         & 292.2\red{70}    \\
+      MW7          & -192.962 955 \red{162} & 0.724 96\red{5} & -9.241 18\red{9}         & 292.29\red{2}    \\
+      MW8          & -192.962 955 5\red{79} & 0.724 967       & -9.241 182               & 292.288          \\
+                   &                        &                 &                          &                  \\
     \hline
     \hline
     \end{tabular}
 \end{table}
+\tiny
+MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \end{frame}
 
