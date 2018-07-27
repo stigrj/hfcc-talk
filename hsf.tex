@@ -1,34 +1,210 @@
 \begin{frame}
-\frametitle{Hiller-Sucher-Feinberg (HSF)}
-\scriptsize
-Some theory
+\frametitle{Hiller-Sucher-Feinberg}
+
+\begin{columns}
+\begin{column}[b]{0.5\linewidth}
+\centering
+\textbf{Hypervirial theorem}
+\begin{equation}
+    \nonumber
+    \langle \Psi | \left[\hat{H},\hat{W}\right] | \Psi \rangle = 0
+\end{equation}
+\end{column}
+\begin{column}[b]{0.5\linewidth}
+\begin{itemize}
+\item $\Psi$ eigenfunction of $\hat{H}$
+\item $\hat{W}$ \emph{any} operator
+\end{itemize}
+\end{column}
+\end{columns}
+
+\vspace{10mm}
+
+\begin{columns}
+\begin{column}[b]{0.5\linewidth}
+\centering
+\textbf{Virial theorem}
+\begin{equation}
+    \nonumber
+    \langle2T\rangle + \langle V\rangle = 0
+\end{equation}
+\end{column}
+\begin{column}[b]{0.4\linewidth}
+\begin{equation}
+    \nonumber
+    \hat{W} = \sum_i r_i\frac{\partial}{\partial r_i}
+\end{equation}
+\end{column}
+\begin{column}[b]{0.1\linewidth}
+\end{column}
+\end{columns}
+
+\vspace{10mm}
+
+\centering
+\textbf{Hiller-Sucher-Feinberg\footcite{HillerSucherFeinberg_1978} \footcite{RassolovChipman_1996}}
+\begin{equation}
+    \nonumber
+    \hat{W} = \sum_i \frac{\partial}{\partial r_i}
+\end{equation}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Hydrogen atom}
+\frametitle{Hiller-Sucher-Feinberg}
 \centering
-\scriptsize
+\textbf{For the hydrogen atom (radial part)}
+\begin{equation}
+    \nonumber
+    \hat{H} = -\frac{1}{2}\frac{\partial^2}{\partial r^2}
+              -\frac{1}{r}\frac{\partial}{\partial r}
+              + V(r)
+\end{equation}
+
+\vspace{5mm}
+
+\pause
+\centering
+\textbf{The commutator gives}
+\begin{equation}
+    \nonumber
+    \left[\hat{H},\hat{W}\right] =
+    \frac{\partial V}{\partial r}
+    -\frac{1}{r^2}\frac{\partial}{\partial r}
+\end{equation}
+
+\vspace{5mm}
+
+\pause
+\textbf{Integration by parts on the last term}
+\begin{equation}
+    \nonumber
+    \langle\Psi|\frac{1}{r^2}|\frac{\partial\Psi}{\partial r}\rangle =
+    4\pi|\Psi(0)|^2 - 
+    \langle\frac{\partial\Psi}{\partial r}|\frac{1}{r^2}|\Psi\rangle
+\end{equation}
+
+\vspace{5mm}
+
+\pause
+\textbf{Which leads to the Hiller-Sucher-Feinberg identity}
+\begin{equation}
+    \nonumber
+    2\pi|\Psi(0)|^2 =
+    \langle\Psi|\frac{\partial V}{\partial r_i}
+    | \Psi\rangle
+\end{equation}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Hiller-Sucher-Feinberg}
+\centering
+\textbf{S state one-electron system}
+\begin{equation}
+    \nonumber
+    |\Psi(0)|^2 = \frac{1}{2\pi}\langle\Psi|V'(r)|\Psi\rangle
+                = \frac{1}{2\pi}\langle\Psi|r^{-2}|\Psi\rangle
+\end{equation}
 \begin{table}
 \textbf{Function value of Hydrogen 1s orbital}
 \begin{tabular}{cclcl}
 \hline
 \hline
 \multicolumn{1}{c}{\textbf{Precision}}&
-\multicolumn{1}{c}{$\phi(r_0)$}&
+\multicolumn{1}{c}{$\Psi(0)$}&
 \multicolumn{1}{l}{Error}&
-\multicolumn{1}{c}{$\phi(r_0)$}&
+\multicolumn{1}{c}{$\Psi(0)$}&
 \multicolumn{1}{l}{Error}\\
-\hline                        
-\hspace{10mm}\ &\hspace{15mm}\     &\hspace{15mm}\ &\hspace{15mm}\      &\hspace{10mm}\ \\
+\hline
+\hspace{10mm}\ &\hspace{25mm}\     &\hspace{15mm}\ &\hspace{25mm}\      &\hspace{10mm}\ \\
 &
-\multicolumn{2}{c}{Fermi-Contact}&
-\multicolumn{2}{c}{Hiller-Sucher-Feinberg}\\
- MW4           &0.5\red{72 116 507}&\red{7.9e-03}  &                    &\green{       }\\
- MW5           &0.56\red{6 687 228}&\red{2.4e-03}  &                    &\green{       }\\
- MW6           &0.56\red{5 279 010}&\red{1.0e-03}  &                    &\green{       }\\
- MW7           &0.564 \red{553 287}&\red{3.6e-04}  &                    &\green{       }\\
- MW8           &0.564 \red{252 177}&\red{6.2e-05}  &                    &\green{       }\\
+\multicolumn{2}{c}{}&
+\multicolumn{2}{c}{}\\
+\hspace{10mm}\ &\hspace{25mm}\     &\hspace{15mm}\ &\hspace{25mm}\      &\hspace{10mm}\ \\
+               &                   &               &                    &               \\
+               &                   &               &                    &               \\
+               &                   &               &                    &               \\
+               &                   &               &                    &               \\
+               &                   &               &                    &               \\
+               &                   &               &                    &               \\
+               &                   &               &                    &               \\
+               &                   &               &                    &               \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hiller-Sucher-Feinberg}
+\centering
+\textbf{S state one-electron system}
+\begin{equation}
+    \nonumber
+    |\Psi(0)|^2 = \frac{1}{2\pi}\langle\Psi|V'(r)|\Psi\rangle
+                = \frac{1}{2\pi}\langle\Psi|r^{-2}|\Psi\rangle
+\end{equation}
+\begin{table}
+\textbf{Function value of Hydrogen 1s orbital}
+\begin{tabular}{cclcl}
+\hline
+\hline
+\multicolumn{1}{c}{\textbf{Precision}}&
+\multicolumn{1}{c}{$\Psi(0)$}&
+\multicolumn{1}{l}{Error}&
+\multicolumn{1}{c}{$\Psi(0)$}&
+\multicolumn{1}{l}{Error}\\
+\hline
+\hspace{10mm}\ &\hspace{25mm}\     &\hspace{15mm}\ &\hspace{25mm}\      &\hspace{10mm}\ \\
+&
+\multicolumn{2}{c}{$|\Psi(0)|^2$}&
+\multicolumn{2}{c}{}\\
+\hspace{10mm}\ &\hspace{25mm}\     &\hspace{15mm}\ &\hspace{25mm}\      &\hspace{10mm}\ \\
+ MW4           &0.5\red{72 116 507}&\red{7.9e-03}  &                    &               \\
+ MW5           &0.56\red{6 687 228}&\red{2.4e-03}  &                    &               \\
+ MW6           &0.56\red{5 279 010}&\red{1.0e-03}  &                    &               \\
+ MW7           &0.564 \red{553 287}&\red{3.6e-04}  &                    &               \\
+ MW8           &0.564 \red{252 177}&\red{6.2e-05}  &                    &               \\
+               &                   &               &                    &               \\
+ Exact         &0.564 189 583      &-              &                    &               \\
+               &                   &               &                    &               \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hiller-Sucher-Feinberg}
+\centering
+\textbf{S state one-electron system}
+\begin{equation}
+    \nonumber
+    |\Psi(0)|^2 = \frac{1}{2\pi}\langle\Psi|V'(r)|\Psi\rangle
+                = \frac{1}{2\pi}\langle\Psi|r^{-2}|\Psi\rangle
+\end{equation}
+\begin{table}
+\textbf{Function value of Hydrogen 1s orbital}
+\begin{tabular}{cclcl}
+\hline
+\hline
+\multicolumn{1}{c}{\textbf{Precision}}&
+\multicolumn{1}{c}{$\Psi(0)$}&
+\multicolumn{1}{l}{Error}&
+\multicolumn{1}{c}{$\Psi(0)$}&
+\multicolumn{1}{l}{Error}\\
+\hline
+\hspace{10mm}\ &\hspace{25mm}\     &\hspace{15mm}\ &\hspace{25mm}\      &\hspace{10mm}\ \\
+&
+\multicolumn{2}{c}{$|\Psi(0)|^2$}&
+\multicolumn{2}{c}{$\langle\Psi|V'(r)|\Psi\rangle$}\\
+\hspace{10mm}\ &\hspace{25mm}\     &\hspace{15mm}\ &\hspace{25mm}\      &\hspace{10mm}\ \\
+ MW4           &0.5\red{72 116 507}&\red{7.9e-03}  &0.564 \red{326 655} &\yellow{1.4e-04}\\
+ MW5           &0.56\red{6 687 228}&\red{2.4e-03}  &0.564 2\red{02 796} &\yellow{1.3e-05}\\
+ MW6           &0.56\red{5 279 010}&\red{1.0e-03}  &0.564 19\red{1 749} &\yellow{2.2e-06}\\
+ MW7           &0.564 \red{553 287}&\red{3.6e-04}  &0.564 189 \red{842} &\yellow{2.6e-07}\\
+ MW8           &0.564 \red{252 177}&\red{6.2e-05}  &0.564 189 58\red{5} &\green{2.0e-09}\\
                &                   &               &                    &               \\
  Exact         &0.564 189 583      &-              &0.564 189 583       &-              \\
                &                   &               &                    &               \\
@@ -39,8 +215,109 @@ Some theory
 \end{frame}
 
 \begin{frame}
-\frametitle{Hiller-Sucher-Feinberg (HSF)}
-\scriptsize
-Extension to many-electron systems
+\frametitle{Hiller-Sucher-Feinberg}
+\centering
+\textbf{Extension to larger systems}
+\begin{equation}
+    \nonumber
+    \left[\hat{H},\hat{W}\right] =
+    \frac{\hat{L}^2}{r^3}
+    -\frac{\partial \hat{V}}{\partial r}
+    -\frac{1}{r^2}\frac{\partial}{\partial r}
+\end{equation}
 
+\vspace{10mm}
+
+\pause
+\textbf{Hiller-Sucher-Feinberg identity}
+\begin{equation}
+    \nonumber
+    \langle \Psi | \delta(r_{iO}) | \Psi \rangle =
+    \frac{1}{2\pi}\langle \Psi |
+    \frac{\hat{L}_{iO}^2}{r_{iO}^3} -
+    \frac{\partial U}{\partial r_i} - 
+    \frac{\partial V}{\partial r_i}
+    | \Psi \rangle
+\end{equation}
+
+\vspace{2mm}
+
+$U$ denotes one-electron potentials\\
+$V$ denotes two-electron potentials\\
+
+\ 
+\vspace{2mm}
+
+\textbf{Requires complete basis set}
 \end{frame}
+
+\begin{frame}
+\frametitle{Hiller-Sucher-Feinberg}
+\centering
+\textbf{General one-electron system}
+\begin{equation}
+    \nonumber
+    |\Psi(0)|^2 = \frac{1}{2\pi}\langle\Psi|\frac{\hat{L}^2}{r^3} -
+    \frac{\partial U}{\partial r}|\Psi\rangle
+\end{equation}
+\begin{table}
+\textbf{Function value of H$_2^+$ orbital}
+\begin{tabular}{cclcl}
+\hline
+\hline
+\multicolumn{1}{c}{\textbf{Precision}}&
+\multicolumn{1}{c}{$\Psi(H0)$}&
+\multicolumn{1}{c}{$\Psi(H1)$}&
+\multicolumn{1}{c}{$\Psi(H0)$}&
+\multicolumn{1}{c}{$\Psi(H1)$}\\
+\hline
+\hspace{10mm}\ &\hspace{25mm}\     &\hspace{15mm}\ &\hspace{25mm}\      &\hspace{10mm}\ \\
+&
+\multicolumn{2}{c}{$\delta(r)$}&
+\multicolumn{2}{c}{$\langle\Psi|\hat{L}^2/r^3 - U'(r)|\Psi\rangle$}\\
+\hspace{10mm}\ &\hspace{25mm}\  & \hspace{15mm}\  & \hspace{25mm}\  & \hspace{10mm}\  \\
+ MW4           &0.55\red{1 443} & 0.54\red{2 499} & 0.5\red{84 917} & 0.5\red{38 640} \\
+ MW5           &0.55\red{0 325} & 0.54\red{7 132} & 0.5\red{60 140} & 0.5\red{32 525} \\
+ MW6           &0.54\red{8 847} & 0.54\red{7 262} & 0.55\red{2 826} & 0.55\red{1 967} \\
+ MW7           &0.548 \red{191} & 0.547 \red{633} & 0.54\red{9 564} & 0.547 \red{946} \\
+ MW8           &0.547 8\red{86} & 0.547 7\red{87} & 0.548 \red{167} & 0.547 \red{143} \\
+               &                &                 &                 &                 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\tiny
+H$1$ at the origin, H$2$ distance $|r|=0.74085$\AA\ from the origin\\
+\end{frame}
+
+
+\begin{frame}
+\frametitle{HyperFine Coupling Constant (HFCC)}
+\scriptsize
+
+\textbf{Problems}
+\begin{itemize}
+\item Poor pointwise convergence at the nucleus compared to smooth regions
+\item Cancellation effect by subtracting almost equal numbers
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Reasons}
+\begin{itemize}
+\item MultiResolution Analysis (MRA) requires \emph{smooth} functions
+\item We use a smoothed nuclear potential
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Solutions}
+
+\begin{itemize}
+\item \red{\sout{Exploit error cancellation in the smoothed potential?}}
+\item \red{\sout{Place the nucleus at a dyadic point?}}
+\item \red{\sout{Hiller-Sucher-Feinberg identity?}}
+\item Remove the singularity in the nuclear potential?
+\end{itemize}
+\end{frame}
+

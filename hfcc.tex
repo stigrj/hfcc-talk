@@ -33,6 +33,19 @@
 \begin{frame}
 \frametitle{HyperFine Coupling Constant (HFCC)}
 \centering
+    \begin{exampleblock}{{\it{''DFT has proven extremely valuable for the
+    interpretation of experimental [EPR] spectra since it is sometimes more
+    helpful for the experimentalists to get right results for wrong reasons
+    than wrong results for right reasons''}}}
+    \vskip2mm
+    \hspace*\fill{\tiny--- Bernd Engels, \it{Calculation of NMR and EPR
+    parameters}, Wiley (2004)}
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{HyperFine Coupling Constant (HFCC)}
+\centering
 \scriptsize
 \textbf{HFCC of the Fluorine atom (Unrestricted Hartree-Fock)}
 \begin{table}
@@ -43,7 +56,7 @@
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}&
 \multicolumn{1}{r}{\textbf{GTO}}&
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}\\
-\hline                        
+\hline
                &                &                &                \\
                &                &                &                \\
                &                &                &                \\
@@ -85,7 +98,7 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}&
 \multicolumn{1}{r}{\textbf{GTO}}&
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}\\
-\hline                        
+\hline
   cc-pVDZ      & \red{831.451}  &                &                \\
   cc-pVTZ      & \red{  1.981}  &                &                \\
   cc-pVQZ      & \red{144.487}  &                &                \\
@@ -127,7 +140,7 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}&
 \multicolumn{1}{r}{\textbf{GTO}}&
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}\\
-\hline                        
+\hline
   cc-pVDZ      & \red{831.451}  &  cc-pCVDZ      & \red{ 53.566}  \\
   cc-pVTZ      & \red{  1.981}  &  cc-pCVTZ      & \red{429.481}  \\
   cc-pVQZ      & \red{144.487}  &  cc-pCVQZ      & 5\red{09.140}  \\
@@ -169,7 +182,7 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}&
 \multicolumn{1}{r}{\textbf{GTO}}&
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}\\
-\hline                        
+\hline
   cc-pVDZ      & \red{831.451}  &  cc-pCVDZ      & \red{ 53.566}  \\
   cc-pVTZ      & \red{  1.981}  &  cc-pCVTZ      & \red{429.481}  \\
   cc-pVQZ      & \red{144.487}  &  cc-pCVQZ      & 5\red{09.140}  \\
@@ -211,7 +224,7 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}&
 \multicolumn{1}{r}{\textbf{GTO}}&
 \multicolumn{1}{c}{A$_{FC}$ (MHz)}\\
-\hline                        
+\hline
   cc-pVDZ      & \red{831.451}  &  cc-pCVDZ      & \red{ 53.566}  \\
   cc-pVTZ      & \red{  1.981}  &  cc-pCVTZ      & \red{429.481}  \\
   cc-pVQZ      & \red{144.487}  &  cc-pCVQZ      & 5\red{09.140}  \\
@@ -259,7 +272,7 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \multicolumn{1}{c}{$\rho^\alpha(r)$}&
 \multicolumn{1}{c}{$\rho^\beta(r)$}&
 \multicolumn{1}{c}{$\rho^{\alpha-\beta}(r)$}\\
-\hline                        
+\hline
 \hspace{10mm}\     & \hspace{18mm}\     & \hspace{18mm}\     & \hspace{15mm}\ \\
                    &                    &                    &                \\
                    &                    &                    &                \\
@@ -300,7 +313,7 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \multicolumn{1}{c}{$\rho^\alpha(r)$}&
 \multicolumn{1}{c}{$\rho^\beta(r)$}&
 \multicolumn{1}{c}{$\rho^{\alpha-\beta}(r)$}\\
-\hline                        
+\hline
 \hspace{10mm}\     & \hspace{18mm}\     & \hspace{18mm}\     & \hspace{15mm}\ \\
 \multicolumn{4}{c}{$r_0$ at the nucleus}                             \\
                MW4 & 22\red{7.422 438}  & 22\red{7.286 520}  & 0.1\red{35 917}\\
@@ -341,7 +354,7 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \multicolumn{1}{c}{$\rho^\alpha(r)$}&
 \multicolumn{1}{c}{$\rho^\beta(r)$}&
 \multicolumn{1}{c}{$\rho^{\alpha-\beta}(r)$}\\
-\hline                        
+\hline
 \hspace{10mm}\     & \hspace{18mm}\     & \hspace{18mm}\     & \hspace{15mm}\ \\
 \multicolumn{4}{c}{$r_0$ at the nucleus}                             \\
                MW4 & 22\red{7.422 438}  & 22\red{7.286 520}  & 0.1\red{35 917}\\
@@ -389,34 +402,96 @@ MWx: Multiwavelets with precision $\epsilon=10^{-x}$
 \only<1,2,3>{
 \begin{itemize}
 \item Exploit error cancellation in the smoothed potential?
-\item Place the nucleus at a dyadic point?
-\item Hiller-Sucher-Feinberg identity?
-\item Remove the singularity in the nuclear potential?
+\vspace{9.5mm}
+%\item Place the nucleus at a dyadic point?
+%\item Hiller-Sucher-Feinberg identity?
+%\item Remove the singularity in the nuclear potential?
 \end{itemize}
 }
 \only<4>{
 \begin{itemize}
 \item \red{\sout{Exploit error cancellation in the smoothed potential?}}
 \item Place the nucleus at a dyadic point?
-\item Hiller-Sucher-Feinberg identity?
-\item Remove the singularity in the nuclear potential?
+\vspace{4.75mm}
+%\item Hiller-Sucher-Feinberg identity?
+%\item Remove the singularity in the nuclear potential?
 \end{itemize}
 }
-\only<5>{
+%\only<5>{
+%\begin{itemize}
+%\item \red{\sout{Exploit error cancellation in the smoothed potential?}}
+%\item \red{\sout{Place the nucleus at a dyadic point?}}
+%\item Hiller-Sucher-Feinberg identity?
+%\item Remove the singularity in the nuclear potential?
+%\end{itemize}
+%}
+%\only<6>{
+%\begin{itemize}
+%\item \red{\sout{Exploit error cancellation in the smoothed potential?}}
+%\item \red{\sout{Place the nucleus at a dyadic point?}}
+%\item \red{\sout{Hiller-Sucher-Feinberg identity?}}
+%\item Remove the singularity in the nuclear potential?
+%\end{itemize}
+%}
+\end{frame}
+
+\begin{frame}
+\frametitle{HyperFine Coupling Constant (HFCC)}
+\centering
+\textbf{Isotropic (Fermi-Contact) contribution to HFCC}
+\begin{equation}
+    \nonumber
+    A_{FC} = \Big(\frac{4\pi}{3}\langle S_z \rangle^{-1}\Big)
+    g_eg_N\beta_e\beta_N\rho^{\alpha-\beta}(r_N)
+\end{equation}
+
+\begin{table}
+\textbf{HFCC of O$_2$ molecule (PBE)}\\
+\begin{tabular}{crr}
+\hline
+\hline
+\textbf{Precision} & $A_{FC}(O1)$  & $A_{FC}(O2)$  \\
+\hline
+\hspace{10mm}\     & \hspace{18mm}\ & \hspace{18mm}\  \\
+               MW4 & -\red{27.9573}  &  -\red{9.6738} \\
+               MW5 & -\red{11.4636}  & -20.\red{9434} \\
+               MW6 & -21.\red{3382}  & -21.\red{0007} \\
+               MW7 & -21.\red{0051}  & -21.\red{3342} \\
+               MW8 & -21.\red{1106}  & -21.\red{2558} \\
+                   &                &                 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\tiny
+O$1$ at the origin, O$2$ distance $|r|=1.2075$\AA\ from the origin\\
+\end{frame}
+
+\begin{frame}
+\frametitle{HyperFine Coupling Constant (HFCC)}
+\scriptsize
+
+\textbf{Problems}
+\begin{itemize}
+\item Poor pointwise convergence at the nucleus compared to smooth regions
+\item Cancellation effect by subtracting almost equal numbers
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Reasons}
+\begin{itemize}
+\item MultiResolution Analysis (MRA) requires \emph{smooth} functions
+\item We use a smoothed nuclear potential
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Solutions}
 \begin{itemize}
 \item \red{\sout{Exploit error cancellation in the smoothed potential?}}
 \item \red{\sout{Place the nucleus at a dyadic point?}}
 \item Hiller-Sucher-Feinberg identity?
-\item Remove the singularity in the nuclear potential?
 \end{itemize}
-}
-\only<6>{
-\begin{itemize}
-\item \red{\sout{Exploit error cancellation in the smoothed potential?}}
-\item \red{\sout{Place the nucleus at a dyadic point?}}
-\item \red{\sout{Hiller-Sucher-Feinberg identity?}}
-\item Remove the singularity in the nuclear potential?
-\end{itemize}
-}
 
 \end{frame}
